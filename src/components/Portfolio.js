@@ -33,7 +33,7 @@ const Portfolio = () => {
     },
     {
       name: 'Portfolio',
-      demoLink: 'https://project-four.com',
+      demoLink: 'https://andrewraymondraj.github.io/portfolio/',
       codeLink: 'https://github.com/username/project1',
       imgSrc: portfolio,
       skills: ['React'],
