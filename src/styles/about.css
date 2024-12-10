@@ -1,55 +1,134 @@
-/* About Section Styling */
-
-.about {
+/* General Body Styling */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background: linear-gradient(to right, rgb(54, 47, 125), rgb(5, 5, 5));
-  color: white;
-  padding: 80px 20px;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* About Section */
+.about {
+  padding: 50px 40px;
+  background: linear-gradient(to right, silver, white);
+  border-radius: 12px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  color: black;
   text-align: center;
-  height: 80vh; /* Increased height for more breathing space */
-  padding-top: 10vh;
+  max-width: 1200px;
+  margin: 30px auto;
   position: relative;
-  border-bottom: 2px solid rgba(255, 255, 255, 0.2); /* Light border for separation */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  z-index: 1;
+}
+
+.about::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.2); /* Reduced opacity for a brighter effect */
+  border-radius: 12px;
+  z-index: -1;
 }
 
 .about h2 {
   font-size: 3rem;
-  font-weight: 800;
   margin-bottom: 20px;
-  color: #ffffff;
+  font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 2px; /* Add some spacing to make it more stylish */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); /* Subtle shadow for text */
+  letter-spacing: 3px;
+  color: #fff;
 }
 
 .about h3 {
-  font-size: 1.5rem;
-  font-weight: 400;
+  font-size: 1.3rem;
   line-height: 1.8;
-  max-width: 1100px;
-  border-radius: 20px;
-  margin: 30px auto;
-  color: #ffffff;
-  padding: 15px;
-  text-align: center;
-  background: rgba(255, 255, 255, 0.1); /* Subtle background color to highlight the text */
-  border-radius: 8px; /* Rounded corners */
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Light shadow around the box */
+  color: black;
+  font-weight: bold;
+  text-align: justify;
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 20px;
+  letter-spacing: 0.5px;
 }
 
-/* Responsive design for smaller screens */
+/* Education Section */
+.education {
+  margin-top: 60px;
+  padding: 10px 30px 10px 30px;
+  background-color:white;
+  height: 50vh;
+  border-radius: 12px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  color: #333;
+}
+
+.education h3 {
+  font-size: 2.1rem;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #4a54f1;
+  font-weight: 600;
+}
+
+.education ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.education li {
+  font-size: 1.2rem;
+  color: #444;
+  margin-bottom: 20px;
+  padding-left: 0;
+  position: relative;
+  font-weight: 400;
+  line-height: 1.6;
+  border-left: 5px solid #6e7cfd;
+  padding-left: 20px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.education li strong {
+  font-weight: 600;
+  color: #4a54f1;
+}
+
+.education li span {
+  display: block;
+  font-size: 0.9rem;
+  color:black;
+  margin-top: 5px;
+}
+
+/* Hover Effects for Education List */
+.education li:hover {
+  background-color: #e9f3ff;
+  transform: translateX(10px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsiveness */
 @media (max-width: 768px) {
   .about {
-    padding: 60px 15px;
-    height: auto; /* Allow the height to adjust on smaller screens */
+    padding: 30px;
   }
 
   .about h2 {
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
 
   .about h3 {
-    font-size: 1.2rem;
-    padding: 12px;
+    font-size: 1.1rem;
+  }
+
+  .education h3 {
+    font-size: 1.6rem;
+  }
+
+  .education li {
+    font-size: 1rem;
   }
 }

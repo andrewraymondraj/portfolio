@@ -2,10 +2,13 @@ import React from 'react';
 import '../styles/home.css';
 import image from './image.jpg'; // Import your profile image
 import resume from './resume.pdf'; // Import your resume PDF
+import Navbar from './Navbar';
 
 const Home = () => {
   return (
     <>
+
+    <Navbar />
     <section id="home" className="home">
       <div className="home-container">
         <div className="text-container">

@@ -4,6 +4,7 @@ import instagram from '../assets/instagram.png'
 import rps from '../assets/rps.png'
 import contacts from '../assets/contacts.png'
 import portfolio from '../assets/portfolio.png'
+import sqlicon from '../assets/mysql-icon.png'
 
 const Portfolio = () => {
   const projects = [
@@ -39,6 +40,23 @@ const Portfolio = () => {
       skills: ['React'],
       description: "This portfolio highlights my skills as a Front-End Developer using React. It features sections like Home, About, Skills, and Projects, demonstrating my expertise in HTML, CSS, JavaScript, React, and other technologies, with interactive elements and responsive design."
     },
+    {
+      name: 'Real Time- Customer LoanDetails Analysis',
+      demoLink: 'https://www.dropbox.com/scl/fi/fkrs4bdssj1buk6h015yb/PROJECT1.pptx?rlkey=roxy9wawvedwo6wq5qb5myaq2&e=2&st=wa9nwasd&dl=0',
+      codeLink: 'https://www.dropbox.com/scl/fi/3t2z1fff1oofin04z8jak/project1.sql?rlkey=nlwnzu7k0r8evmsqp0nrsjpa9&e=2&st=ctomyngn&dl=0',
+      imgSrc: sqlicon,
+      skills: ['MySql'],
+      description: "Developed & comprehensive Loan Analysis System Based onreal time scenario. Using tool My sql Database Technology. Implemented6 tables while usingjoins . finally Stored the All Reports into Store Procedure."
+    },
+    {
+      name: 'Real Time- Sales Record Analysis',
+      demoLink: 'https://www.dropbox.com/scl/fi/v4jjwawoszifupf9cut1w/SQL-PROJECT2.pptx?rlkey=5unfeog43t95tg9gstyokv5av&st=oqa70f47&dl=0',
+      codeLink: 'https://www.dropbox.com/scl/fi/yzxluzknpg2xamnym15fr/project2.sql?rlkey=wu38rn9xqj6wjg10uvx0n00f0&e=1&st=4hkuilio&dl=0',
+      imgSrc: sqlicon,
+      skills: ['MySql'],
+      description: " Developed & comprehensive stock & work_order analysis Based onreal time scenario. Using tool My sql Database Technology. Applying logical functions, aggregate functions and 2 tables connected while usingjoins finally Stored the All Reports into Stored Procedure and exported as a table"
+    },
+    
   ];
 
   return (
