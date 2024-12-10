@@ -5,11 +5,13 @@ import rps from '../assets/rps.png'
 import contacts from '../assets/contacts.png'
 import portfolio from '../assets/portfolio.png'
 import sqlicon from '../assets/mysql-icon.png'
+import todolist from '../assets/todolist.png'
+import w3school from '../assets/w3school.png'
 
 const Portfolio = () => {
   const projects = [
     {
-      name: 'Instagram Clone',
+      name: 'Instagram UI',
       demoLink: 'https://instagram-tau-blond.vercel.app/',
       codeLink: 'https://github.com/andrewraymondraj/instagram',
       imgSrc: instagram, 
@@ -25,6 +27,14 @@ const Portfolio = () => {
       description:"Create an interactive Rock-Paper-Scissors game using HTML, CSS, and JavaScript, where users play against the computer, which randomly selects rock, paper, or scissors for each round ",
     },
     {
+      name: 'Todo List',
+      demoLink: 'https://andrewraymondraj.github.io/todolist/',
+      codeLink: 'https://github.com/andrewraymondraj/todolist',
+      imgSrc: todolist,
+      skills: ['React'],
+      description: "A To-Do List project allows users to add tasks with a title and summary, and delete tasks. It features a toggle for dark and light modes, providing an intuitive interface for task management and personalized theme preferences."
+    },
+    {
       name: 'Contacs Manager',
       demoLink: 'https://andrewraymondraj.github.io/contact_manager/',
       codeLink: 'https://github.com/andrewraymondraj/contact_manager',
@@ -34,12 +44,23 @@ const Portfolio = () => {
     },
     {
       name: 'Portfolio',
-      demoLink: 'https://project-four.com',
-      codeLink: 'https://github.com/username/project1',
+      demoLink: 'https://andrewraymondraj.github.io/portfolio/',
+      codeLink: 'https://github.com/andrewraymondraj/portfolio',
       imgSrc: portfolio,
       skills: ['React'],
       description: "This portfolio highlights my skills as a Front-End Developer using React. It features sections like Home, About, Skills, and Projects, demonstrating my expertise in HTML, CSS, JavaScript, React, and other technologies, with interactive elements and responsive design."
     },
+    {
+      name: 'Simple React UI',
+      demoLink: 'https://react-project-mu-ten.vercel.app/',
+      codeLink: 'https://github.com/andrewraymondraj/w3school',
+      imgSrc: w3school,
+      skills: ['React'],
+      description: "This project builds a functional React-based website with dark/light mode toggle, filter search functionality, and authentication pages (signin/login), focusing on interactivity, user experience, and state management."
+    },
+    
+
+
     {
       name: 'Real Time- Customer LoanDetails Analysis',
       demoLink: 'https://www.dropbox.com/scl/fi/fkrs4bdssj1buk6h015yb/PROJECT1.pptx?rlkey=roxy9wawvedwo6wq5qb5myaq2&e=2&st=wa9nwasd&dl=0',
