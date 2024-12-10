@@ -45,7 +45,10 @@ const Portfolio = () => {
     {
       name: 'Portfolio',
       demoLink: 'https://andrewraymondraj.github.io/portfolio/',
+
       codeLink: 'https://github.com/andrewraymondraj/portfolio',
+
+
       imgSrc: portfolio,
       skills: ['React'],
       description: "This portfolio highlights my skills as a Front-End Developer using React. It features sections like Home, About, Skills, and Projects, demonstrating my expertise in HTML, CSS, JavaScript, React, and other technologies, with interactive elements and responsive design."
