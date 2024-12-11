@@ -20,9 +20,15 @@ const Skills = () => {
       ],
     },
     {
-      category: 'Frameworks',
+      category: 'Library',
       items: [
         { name: 'React JS', icon: reactIcon },
+       
+      ],
+    },
+    {
+      category: 'Framework',
+      items: [
         { name: 'Bootstrap', icon: bootstrapIcon },
       ],
     },
